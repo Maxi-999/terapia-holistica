@@ -1,65 +1,126 @@
 :root{
     --primary-font-color1: #ffffff; 
-    --primary-font-color2: #007bff;
+    --primary-font-color2: #a8d80a;
+    --primary-font-color3: #c30ad8;
+    --primary-font-color4: #d3dd12;
+    --primary-font-color5: #0ad36b;
+    --primary-font-color6: #000703;
+    --primary-font-color7: #100790;
+}
+.typewrite{
+    text-align: center;
+    color: var(--primary-font-color4);
+    font: x-large;
+}
+
+.titulo{
+    font-size: xx-large;
+}
+.terapias{
+    font-size: xx-large;
+}
+
+.contacto{
+    font-size: xx-large;
 }
 
 .navbar-light {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(236, 98, 249, 0.7);
     
+   
 }
+.container-frases{
+    font-size:xx-large;
+    font-family: cursive;
+    
+    width: 100%;
+    height: 50vh;
+}
+    
+  .propag{
+    text-align: center;
+    font-size: x-large;
+    font-weight: 700;
+  }
+  
 
-.navbar-light .container a, .navbar-light .container .collapse .navbar-nav .nav-item .nav-link{
+.navbar-light .container a , .navbar-light .container .collapse .navbar-nav .nav-item .nav-link{
     color: var(--primary-font-color1);
+    font-weight: 900;  
+    font-family:cursive;
+    float: left;
+  
+
 }
 
 .background-main{
     height: 100vh;
-    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../img/pexels-shonny-yu-2947097.jpg);
+    background: linear-gradient(rgba(0, 4, 6, 0.5),rgba(20,20,20, .5)),url(../img/pexels-shonny-yu-2947097.jpg);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
     clip-path: polygon(0 0, 100% 0, 100% 89%, 51% 100%, 0 89%);
+   
 }
 
 .background-main, .services-class{
     max-width: 100%;
     background-position: center center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
-    background-size:  cover;
+    background-attachment:fixed;
+    background-size:cover;
     color:var(--primary-font-color1);
+    
 }
 
 .background-main h1{
-    font-size: 5.5rem;
+    font-size: 3rem;
+    color: #b584c1;
+    
 }
 
 .background-main .main { 
     display: table; 
     width: 100%;
-    height: 82vh;
+    height: 75vh;
     text-align: center;
-    /*
-    display: flex; 
+    color: #cc00ff;
+    
+    
+    /*display: flex; 
     width: 50%; 
     height: 200px; 
-    margin: auto; 
-    */
+    margin: auto; */
+    
 } 
 
-.background-main .main .main-title,.background-main .main p { 
+.background-main .main,.background-main .main p { 
     display: table-cell;
     vertical-align: middle;
-    /*margin: auto;  Important 
-    text-align: center;  */
+    color: #cc00ff;
+    margin: auto; /* Important*/
+    text-align: center;  
+   
+}
+.main-title{
+    display: table-cell;
+    vertical-align: middle;
+    color: #1ac80a;
+  
+}
+
+.portfolio-title2{
+    font-size: x-large;
 }
 
 .main-link{
     font-size: 44px;
-    color: var(--primary-font-color1);
+    color: var(--primary-font-color2);
+    
 }
 .main-link:hover{
     color:var(--primary-font-color2);
+
 }
 
 .about-us,.services-class{
@@ -68,48 +129,80 @@
 }
 
 .line-shape{
-    width: 10%;
-    height: 2px;
-    margin-left: calc(49% - 40px);
+    width: 30%;
+    height: 3px;
+    margin-left: calc(50% - 50px);
     background-color: var(--primary-font-color2);
-    margin-top: 17px;
+    margin-top: 10px;
     margin-bottom: 25px;
+
 }
 
 .services-class{
     max-width: 100%;
     height: 78vh;
-    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../img/bosque.jpeg);
+    background: linear-gradient(rgba(0, 5, 5, 0.5),rgba(20,20,20, .5)),url(../img/wallpaperflare.com_wallpaper\ \(4\).jpg);
     background-position: center center;
     background-repeat:  no-repeat;
     background-attachment: fixed;
     background-size:  cover;
     -webkit-clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
     clip-path: polygon(0 7%, 100% 0, 100% 96%, 0 100%);
+
 }
 
+.relax{
+    font:800;
+    font-size: x-large;
+}
 .services-class .section-heading, .portfolio-title,.contact-us .section-heading{
-    font-size: 34px;
-    margin-top: 2.5em;
+    font-size: 20px;
+    font-size: x-large;
+   
+
+}
+
+.tips{
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 .services-class .container .service-box .text-muted{
-    color: rgba(255,255,255,.7) !important
+    font-size: 2rem;
+    font-weight: 700;  
+    font-family:cursive;
+    color: rgba(21, 18, 230, 0.7) !important
+    
+    
+
 }
 
 .contact-us{
+    font-size: 2rem;
+    font-weight: 700; 
     max-width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(20,20,20, .5),rgba(20,20,20, .5)),url(../img/pexels-stein-egil-liland-1933239.jpg);
+    background: linear-gradient(rgba(1, 1, 1, 0.5),rgba(1, 1, 1, 0.5)),url(../img/wallpaperflare.com_wallpaper\ \(2\).jpg);
     background-position: center center;
     background-repeat:  no-repeat;
-    background-attachment: fixed;
+    background-attachment: var(fixed);/*fixed estaba*/
     background-size:  cover;
     color: var(--primary-font-color1);
     -webkit-clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
     clip-path: polygon(0 0, 100% 7%, 100% 100%, 0 94%);
 }
+.contacto{
+    font-size: larger;
+    font-family: cursive;
+    text-align: center;
+    font-weight: 600;
+}
 
+.mensaje{
+    font-weight: 600;
+    text-align: center;
+    font-size: large;
+}
 
 footer.footer .social-link {
     display: block;
@@ -117,13 +210,288 @@ footer.footer .social-link {
     width: 4rem;
     line-height: 4.3rem;
     font-size: 2.5rem;
-    background-color: var(--primary-font-color2);
+    background-color: var(--primary-font-color5);
     -webkit-transition: background-color .15s ease-in-out;
     transition: background-color .15s ease-in-out;
-    -webkit-box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
-    box-shadow: 0 3px 3px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 3px 3px 0 rgba(10, 122, 13, 0.1);
+    box-shadow: 0 3px 3px 0 rgba(4, 139, 29, 0.1);
 }
 
 footer.footer .social-link:hover{
     background-color: rgba(20,20,20, .5);
+}
+
+.modal-body {
+    height: 2rem;
+    max-width: 100%;
+}
+
+
+
+/*css Productos*/
+
+:root{
+    --primario: #830898; 
+    --primario_oscuro: #89119d;
+    --secundario: #5cee08;
+    --secundario_oscuro: rgb(233,287,2);
+    --blanco: #fff;
+    --negro: #000;
+    
+    }
+    
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+      }
+      *, *:before, *:after {
+        box-sizing: inherit;
+      }
+    
+      /*GLOBALES*/
+    
+    body{
+        background-color: var(--primario);
+        font-size: 2rem;
+        line-height:1.5;
+    }
+    
+    p{
+        font-size: 1.8rem;
+        font-family: Arial, Helvetica, sans-serif;
+        color: var(--blanco);
+    }
+    
+    a{
+        text-decoration: none;
+    }
+    
+    img{
+        width: 100%;
+    }
+    
+    .contenedor{
+        max-width: 120rem;
+        margin: 0 auto;
+    }
+    
+    h1,h2,h3{
+        text-align: center;
+        color: var(--secundario);
+        font-family:'Times New Roman', Times, serif;
+    }
+    
+    h1 {font-size: 4rem;}
+    h2 {font-size: 3.2rem;}
+    h3 {font-size: 2.4rem;}
+
+/*header*/
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__logo{
+    margin: 3rem 0;
+}
+/*footer*/
+
+.footer{
+    background-color: var(--primario_oscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/*bloque*/
+.navegacion{
+    background-color: var(--primario_oscuro);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem; 
+
+}
+/*elemento - sintaxis de BEM*/
+.navegacion__enlace{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: var(--blanco);
+    font-size: 3rem;
+    
+
+}
+
+/*modificadores*/
+
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover{
+    color: var(--secundario);
+
+}
+
+/**Grid para crear una tienda virtual con productos**/
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .grid{
+    grid-template-columns: repeat(3, 1fr);
+}
+}
+
+
+
+/*Productos*/
+.producto{
+    background-color: var(--primario_oscuro);
+    padding: 1rem;
+}
+
+
+.producto__nombre{
+font-size: 4rem;
+}
+
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+.producto__nombre,
+.producto__precio{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/**graficos**/
+
+.grafico{
+    min-height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1 / 3;
+}
+/*.grafico--camisa{
+grid-row: 2 / 3;
+background-image: url(../css/image/grafico1.jpg);
+
+}
+.grafico--node{
+    background-image: url(../css/image/grafico2.jpg);    
+    grid-row: 8 / 9;
+}*/
+
+@media (min-width: 768px) {
+    .grafico--node{
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    }
+}
+
+/**nosotros**/
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+    .nosotros{
+      
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    
+    }
+}
+
+.nosotros__imagen{
+    grid-row: 1 / 2;
+   }
+
+@media (min-width: 768) {
+    .nosotros__imagen{
+        grid-column: 2 / 3;
+        }
+}
+
+/**Bloques**/
+
+.bloques{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px) {
+    .bloques{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.bloque__titulo{
+    margin: 0;
+
+}
+.bloque{
+    text-align: center;
+}
+
+/**PAGINA DEL PRODUCTO**/
+
+@media (min-width:768px ) {
+    .camisa{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+
+    }
+}
+/**formulario*/
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.formulario__campo{
+    /* border-color: var(--primario_oscuro);
+    border-width: 1rem;
+    border-style: solid;    es lo mismo de abajo */
+    
+    border: 1rem solid var(--primario_oscuro);
+    background-color: transparent;
+    color: var(--blanco);
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1rem;
+    
+
+
+
+
+
+
+}
+.formulario__submit{
+background-color: var(--secundario);
+border: none;
+font-size: 1.5rem;
+font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+padding: 2rem;
+transition: font-size .3s ease;
+grid-column: 1/3;
+
+}
+
+.formulario__submit:hover{
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: var(--secundario_oscuro);
+    
 }
